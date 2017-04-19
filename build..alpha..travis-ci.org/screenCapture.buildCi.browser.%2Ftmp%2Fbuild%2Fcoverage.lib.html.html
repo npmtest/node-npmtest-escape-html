@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-escape-html/escape-html/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-escape-html/node_modules/escape-html/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-escape-html">npmtest-escape-html (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-escape-html/escape-html/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-escape-html/node_modules/escape-html/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">10.34% <small>(3 / 29)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-escape-html/escape-html/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-escape-html/node_modules/escape-html/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -404,58 +402,59 @@ module.exports = escapeHtml;
  * @public
  */
 &nbsp;
-<span class="fstat-no" title="function not covered" >function escapeHtml(string) {</span>
-<span class="cstat-no" title="statement not covered" >  var str = '' + string;</span>
-<span class="cstat-no" title="statement not covered" >  var match = matchHtmlRegExp.exec(str);</span>
+<span class="fstat-no" title="function not covered">function escapeHtml(string) {</span>
+<span class="cstat-no" title="statement not covered">  var str = '' + string;</span>
+<span class="cstat-no" title="statement not covered">  var match = matchHtmlRegExp.exec(str);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!match) {</span>
-<span class="cstat-no" title="statement not covered" >    return str;</span>
+<span class="cstat-no" title="statement not covered">  if (!match) {</span>
+<span class="cstat-no" title="statement not covered">    return str;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var escape;</span>
-<span class="cstat-no" title="statement not covered" >  var html = '';</span>
-<span class="cstat-no" title="statement not covered" >  var index = 0;</span>
-<span class="cstat-no" title="statement not covered" >  var lastIndex = 0;</span>
+<span class="cstat-no" title="statement not covered">  var escape;</span>
+<span class="cstat-no" title="statement not covered">  var html = '';</span>
+<span class="cstat-no" title="statement not covered">  var index = 0;</span>
+<span class="cstat-no" title="statement not covered">  var lastIndex = 0;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (index = match.index; index &lt; str.length; index++) {</span>
-<span class="cstat-no" title="statement not covered" >    switch (str.charCodeAt(index)) {</span>
+<span class="cstat-no" title="statement not covered">  for (index = match.index; index &lt; str.length; index++) {</span>
+<span class="cstat-no" title="statement not covered">    switch (str.charCodeAt(index)) {</span>
       case 34: // "
-<span class="cstat-no" title="statement not covered" >        escape = '&amp;quot;';</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        escape = '&amp;quot;';</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       case 38: // &amp;
-<span class="cstat-no" title="statement not covered" >        escape = '&amp;amp;';</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        escape = '&amp;amp;';</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       case 39: // '
-<span class="cstat-no" title="statement not covered" >        escape = '&amp;#39;';</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        escape = '&amp;#39;';</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       case 60: // &lt;
-<span class="cstat-no" title="statement not covered" >        escape = '&amp;lt;';</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        escape = '&amp;lt;';</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       case 62: // &gt;
-<span class="cstat-no" title="statement not covered" >        escape = '&amp;gt;';</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        escape = '&amp;gt;';</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       default:
-<span class="cstat-no" title="statement not covered" >        continue;</span>
+<span class="cstat-no" title="statement not covered">        continue;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (lastIndex !== index) {</span>
-<span class="cstat-no" title="statement not covered" >      html += str.substring(lastIndex, index);</span>
+<span class="cstat-no" title="statement not covered">    if (lastIndex !== index) {</span>
+<span class="cstat-no" title="statement not covered">      html += str.substring(lastIndex, index);</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    lastIndex = index + 1;</span>
-<span class="cstat-no" title="statement not covered" >    html += escape;</span>
+<span class="cstat-no" title="statement not covered">    lastIndex = index + 1;</span>
+<span class="cstat-no" title="statement not covered">    html += escape;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return lastIndex !== index</span>
+<span class="cstat-no" title="statement not covered">  return lastIndex !== index</span>
     ? html + str.substring(lastIndex, index)
     : html;
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 21:55:40 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 04:05:17 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
