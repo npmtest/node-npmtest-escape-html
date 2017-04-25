@@ -1,6 +1,6 @@
 # npmtest-escape-html
 
-#### test coverage for  [escape-html (v1.0.3)](https://github.com/component/escape-html)  [![npm package](https://img.shields.io/npm/v/npmtest-escape-html.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-escape-html) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-escape-html.svg)](https://travis-ci.org/npmtest/node-npmtest-escape-html)
+#### basic test coverage for  [escape-html (v1.0.3)](https://github.com/component/escape-html)  [![npm package](https://img.shields.io/npm/v/npmtest-escape-html.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-escape-html) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-escape-html.svg)](https://travis-ci.org/npmtest/node-npmtest-escape-html)
 
 #### Escape string for use in HTML
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-escape-html/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-escape-html/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-escape-html/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-escape-html/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-escape-html/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-escape-html/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-escape-html/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-escape-html/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-escape-html/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-escape-html/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-escape-html/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-escape-html/build/coverage.html/index.html)
 
@@ -79,7 +79,8 @@
     "scripts": {
         "bench": "node benchmark/index.js"
     },
-    "version": "1.0.3"
+    "version": "1.0.3",
+    "bin": {}
 }
 ```
 
